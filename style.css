@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+padding: 0;
+margin: 0;
+}
+
+*{
+font-family: "Poppins";
+transition: .3s;
+}
+
+#container{
+width: 93vw;
+height: 80vh;
+border-radius: 7px;
+box-shadow: 0px 0px 16px #DBDBDB;
+transform: translate(3.3vw, 0vh);
+box-sizing: border-box;
+text-align: center;
+padding-block: 5vh;
+}
+
+#trans{
+width: 85%;
+height: 25%;
+margin-left: 7.5%;
+}
+
+#trans > span{
+font-size: 20px;
+color: #1F2457;
+}
+
+#container textarea{
+width: 85%;
+height: 30%;
+border: 2px solid #C6C6C6;
+border-radius: 5px;
+padding: 10px;
+font-size: 19px;
+margin-top: 3vh;
+outline: none;
+}
+
+#container textarea::placeholder{
+font-weight: 400;
+}
+
+#container textarea:focus{
+border: 2px solid #14183A;
+}
+
+#convert{
+width: 100%;
+height: 20%;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center; 
+}
+
+#convert > select{
+width: 30%;
+height: 60%;
+border-radius: 5px;
+border: 2px solid #c6c6c6;
+background: transparent;
+font-size: 16.5px;
+text-align: center;
+}
+
+#container > button{
+width: 90%;
+height: 13%;
+border: none;
+background: linear-gradient(135deg, #D16BA5, #86ABE7, #5FFBF1);
+border-radius: inherit;
+color: white;
+font-size: 17px;
+}
+
+
+#bind{
+width: auto;
+height: 15vh;
+padding-left: 3.5vw;
+color: #1F2457;
+}
+
+.line{
+width: 75%;
+height: 4px;
+border-radius: 2px;
+background: linear-gradient(to right, #D16BA5, #86ABE7, #5FFBF1);
+transform: translateY(-3.5vh);
+}
+
+@media only screen and (min-width: 768px){
+  
+.line{
+width: 23vw;
+transform: translateY(-1.5vh);
+}
+
+#container{
+height: 47vh;
+transform: translate(3.3vw, -3vh);
+}
+}

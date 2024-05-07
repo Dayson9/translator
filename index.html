@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Language Translator</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="app">
+  <div id="bind">
+    <h2>Language Translator</h2>
+      <div class="line">
+        </div>
+        </div>
+      <div id="container">
+    <div id="trans">
+  <span id="output">{{translation.value}}</span>
+</div><br>
+  <textarea placeholder="Enter text" id="in">Made with love</textarea>
+
+    <div id="convert">
+      <select class="select" onchange="from = this.value;"></select>
+        <i style="color: #14183a" class="fas fa-exchange-alt" onclick="switchLang()"></i>
+        <select class="select" onchange="to = this.value;"></select>
+      </div>
+     <button>Translate <i class="bx bx-aperture"></i></button>
+    </div>
+  </div>
+<script src="queflow.js"></script>
+<script src="variables.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
