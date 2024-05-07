@@ -30,8 +30,15 @@ button.onclick = () =>{
 translation.value = ".....";
 let apiUrl = `https://api.mymemory.translated.net/get?q=${input.value}&langpair=${from}|${to}`;
      fetch(apiUrl).then(res => res.json()).then   (data => {
-       console.log(data);
-         translation.value = data.responseData.translatedText;
+      let trans = data.responseData.translatedText;
+        if(trans == null){
+        translation.value = "*Invalid input*";
+        }else if(trans == "NO QUERY SPECIFIED. EXAMPLE REQUEST: GET?Q=HELLO&LANGPAIR=EN|IT"){
+        translation.value = "*Seems your input is empty*";
+        }else{
+        translation.value = trans;
+        }
+         
        });
       }
     }
