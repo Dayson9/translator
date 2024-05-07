@@ -54,7 +54,7 @@ border: 2px solid #14183A;
 
 #convert{
 width: 100%;
-height: 20%;
+height: 13vh;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
@@ -71,12 +71,12 @@ font-size: 16.5px;
 text-align: center;
 }
 
-#container > button{
+#container button{
 width: 90%;
-height: 13%;
+height: 10vh;
 border: none;
 background: linear-gradient(135deg, #D16BA5, #86ABE7, #5FFBF1);
-border-radius: inherit;
+border-radius: 5px;
 color: white;
 font-size: 17px;
 }
@@ -102,11 +102,23 @@ width: 100%;
 height: 5vh;
 font-size: 17px;
 text-align: center;
-margin-top: 20px;
+margin-block: 20px;
 }
 
 #md a{
 color: dodgerblue;
+}
+
+#grid{
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: column;
+justify-items: center;
+}
+
+#grid > *{
+align-self: center;
 }
 
 @media only screen and (min-width: 768px){
@@ -119,5 +131,30 @@ transform: translateY(-1.5vh);
 #container{
 height: 600px;
 transform: translate(3.3vw, -3vh);
+}
+
+#convert{
+width: 45%;
+}
+
+#convert select{
+height: 3.5vh;
+}
+
+#container button{
+width: 25%;
+height: 3.5vh;
+justify-self: flex-end;
+}
+
+#grid{
+width: 90%;
+flex-direction: row;
+justify-content: space-between;
+margin-left: 3.7%;
+}
+
+#grid > *{
+margin-top: -3.2vh;
 }
 }
