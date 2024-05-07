@@ -101,4 +101,4 @@ const countries = {
 }
 
 const { Signal, iRender } = QueFlow, app = document.querySelector("#app");
-var content = "", translation = Signal("....."), from = "English", to = "Yoruba";
+var content = "", translation = Signal("....."), from = Signal("en-GB"), to = Signal("yo-NE");

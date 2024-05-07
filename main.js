@@ -2,12 +2,10 @@ iRender(app);
 
 var input = app.querySelector("#in"), button = app.querySelector("button"), select = app.querySelectorAll(".select"), c = 0;
 
-const switchLang = () =>{
-let holder = to;
- to = from;
-  from = holder;
- select[0].value = from;
-select[1].value = to;
+const swapLanguage = () =>{
+let holder = to.value;
+to.value = from.value;
+from.value = holder;
 }
 
 window.onload = function() {
@@ -21,14 +19,13 @@ for (var prop in countries) {
   c++;
 }
 
-select.forEach((el) => el.innerHTML = content);
 
-from = select[0].value = "en-GB";
-to = select[1].value = "yo-NE";
+select.forEach((el) => el.innerHTML = content);
+select[1].value = "yo-NE";
 
 button.onclick = () =>{
 translation.value = ".....";
-let apiUrl = `https://api.mymemory.translated.net/get?q=${input.value}&langpair=${from}|${to}`;
+let apiUrl = `https://api.mymemory.translated.net/get?q=${input.value}&langpair=${from.value}|${to.value}`;
      fetch(apiUrl).then(res => res.json()).then   (data => {
       let trans = data.responseData.translatedText;
         if(trans == null){

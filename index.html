@@ -27,9 +27,9 @@
   <textarea placeholder="Enter text" id="in">Made with love</textarea>
    <div id="grid">
     <div id="convert">
-      <select class="select" onchange="from = this.value;"></select>
-        <i style="color: #14183a" class="fas fa-exchange-alt" onclick="switchLang()"></i>
-        <select class="select" onchange="to = this.value;"></select>
+      <select class="select" onchange="from.value = this.value;" value="{{from.value}}"></select>
+        <i style="color: #14183a" class="fas fa-exchange-alt" onclick="swapLanguage()"></i>
+        <select class="select" onchange="to.value = this.value;" value="{{to.value}}"></select>
       </div>
      <button>Translate <i class="bx bx-aperture"></i></button>
    </div>
