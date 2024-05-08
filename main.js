@@ -1,4 +1,4 @@
-iRender(app);
+iRender("app");
 
 var input = app.querySelector("#in"), button = app.querySelector("button"), select = app.querySelectorAll(".select"), c = 0;
 
