@@ -28,12 +28,7 @@ height: 25%;
 margin-left: 7.5%;
 }
 
-#trans > span{
-font-size: 20px;
-color: #1F2457;
-}
-
-#container textarea{
+#container > #in{
 width: 85%;
 height: 30%;
 border: 2px solid #C6C6C6;
@@ -42,6 +37,14 @@ padding: 10px;
 font-size: 19px;
 margin-top: 3vh;
 outline: none;
+}
+
+#output{
+rows: 80vw;
+height: 20vh;
+font-size: 16px;
+color: #1F2457;
+border: none;
 }
 
 #container textarea::placeholder{
@@ -156,5 +159,17 @@ margin-left: 3.7%;
 
 #grid > *{
 margin-top: -3.2vh;
+}
+
+#output{
+width: 80vw;
+height: 8vh;
+font-size: 0.5em;
+color: #1F2457;
+border: 1px solid;
+}
+
+#container #in{
+font-size: 0.6em;
 }
 }
